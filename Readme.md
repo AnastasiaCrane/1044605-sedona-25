@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Anastasia Zhuravleva](https://up.htmlacademy.ru/htmlcss/25/user/1044605).
-* Наставник: `Неизвестно`.
+* Наставник: [Maksim Fariga](https://up.htmlacademy.ru/htmlcss/25/user/6090).
 
 ---
 
