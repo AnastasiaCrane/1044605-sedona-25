@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="138px" height="70px" viewBox="0 0 138 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="146px" height="76px" viewBox="0 0 146 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
     <title>logo</title>
     <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-8.7%" y="-16.9%" width="117.4%" height="133.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
     <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Index" transform="translate(-571.000000, 0.000000)" fill-rule="nonzero">
+        <g id="Index" transform="translate(-567.000000, 0.000000)" fill-rule="nonzero">
             <g id="top-menu" transform="translate(40.000000, 0.000000)">
-                <g id="logo" transform="translate(531.000000, 0.000000)">
+                <g id="logo" filter="url(#filter-1)" transform="translate(531.000000, 0.000000)">
                     <path d="M138,0 L0,0 L59.51,65.68 C64.73,71.441 73.27,71.441 78.49,65.68 L138,0 Z" id="Shape" fill="#81B3D3"></path>
                     <polygon id="Shape" fill="#23A9E1" points="36.687 0.457 68.835 38.336 100.855 0.686"></polygon>
                     <path d="M61.1,14.719 L78.42,14.719 C77.13,13.919 74.065,10.137 72.377,11.543 C72.24,11.658 67.506,5.799 64.395,8.622 C61.682,11.088 60.422,8.299 57.347,10.252 C53.842,12.57 59.373,13.936 61.1,14.719 M87.83,11.241 L77.97,11.295 C81.866,6.795 83.617,7.277 87.83,11.241" id="Shape" fill="#FFFFFF"></path>
