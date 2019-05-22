@@ -1,61 +1,89 @@
-<!DOCTYPE html>
-<html lang="ru">
+ <!DOCTYPE html>
+ <html lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
-</head>
+ <head>
+   <meta charset="utf-8">
+   <title>HTML Academy: Седона</title>
+ </head>
 
-<body>
-  <header class="header">
-    <nav class="navigation">
-      <a class="header-logo">
-        <img src="img/icons/logo_sedona.svg" width="138" height="71" alt="Логотип City of Sedona">
-      </a>
-      <ul class="navigation-list">
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="inner.html">Гостиницы</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="welcome">
-      <h1 class="visually-hidden">О нас</h1>
-      <img src="img/intro/sedona_welcome.png" width="458" height="352" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks! ">
-    </section>
-    <section class="about-intro">
-      <p class="about-intro-name">Седона-небольшой городок в аризоне,заслуживающий большего!</p>
-      <p class="feature-title">рассмотрим 5 причин,по которым седона круче,чем гранд каньон!</p>
-    </section>
-    <div class="search-title">
-      <p class="lead">Заинтересовались?</p>
-      <p class="search-title-name">Укажите предпологаемые даты поездки,<br>
-        и мы покажем вам лучшие предложения гостиниц в седоне</p>
-    </div>
-    <section class="search">
-      <h2>Поиск гостиницы в седоне</h2>
-      <!--здесь будет форма-->
-    </section>
-  </main>
-  <footer class="footer">
-    <p class="photo-link">
-      <a href="https://www.instagram.com/explore/tags/visitsedona/?hl=en">#visitsedona</a>
-    </p>
-    <div class="footer-social">
-      <ul class="social">
-        <li><a class="social-button" href="#">Twitter</a></li>
-        <li><a class="social-button" href="#">Facebook</a></li>
-        <li><a class="social-button" href="#">Youtube</a></li>
-      </ul>
-    </div>
-    <p class="courses-link">
-      <a class="website-logo" href="https://htmlacademy.ru/intensive/htmlcss">Website By
-        <img src="img/icons/icon_logo_html.svg" width="115" height="41" alt="Логотип html academy">
-      </a>
-    </p>
-  </footer>
-</body>
+ <body>
+   <header class="header">
+     <nav class="navigation">
+       <a class="header-logo">
+         <img src="img/icons/logo_sedona.svg" width="138" height="71" alt="Логотип City of Sedona">
+       </a>
+       <ul class="navigation-list">
+         <li><a href="#">Информация</a></li>
+         <li><a href="#">Фото и видео</a></li>
+         <li><a href="#">Карта штата</a></li>
+         <li><a href="inner.html">Гостиницы</a></li>
+       </ul>
+     </nav>
+   </header>
+   <main>
+     <section class="welcome">
+       <h1 class="visually-hidden">О нас</h1>
+       <img src="img/intro/sedona_welcome.png" width="458" height="352" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks! ">
+     </section>
+     <section class="about-intro">
+       <p class="about-intro-name">Седона-небольшой городок в аризоне,заслуживающий большего!</p>
+       <p class="feature-title">рассмотрим 5 причин,по которым седона круче,чем гранд каньон!</p>
+     </section>
+     <div class="search-title">
+       <p class="lead">Заинтересовались?</p>
+       <p class="search-title-name">Укажите предпологаемые даты поездки,<br>
+         и мы покажем вам лучшие предложения гостиниц в седоне</p>
+     </div>
+     <section class="search">
+       <h2>Поиск гостиницы в Седоне</h2>
+       <form class="search-form" action="index.html" method="post">
+         <p class="search-item">
+           <label for="search-arrival-date">Дата заезда:</label>
+           <input id="search-arrival-date" type="text" name="arrival-date" value="" placeholder="24 апеля 2017">
+           <button type="button" name="calendar">
+             <img src="img/icons/icon_calendar.svg" width="21" height="23" alt="Calendar">
+           </button>
+         </p>
+         <p class="search-item">
+           <label for="search-date-departure">Дата выезда:</label>
+           <input id="search-date-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017">
+           <button type="button" name="calendar">
+             <img src="img/icons/icon_calendar.svg" width="21" height="23" alt="Calendar">
+           </button>
+         </p>
+         <p class="search-item">
+           <label for="search-number-adults">Взрослые:</label>
+           <button class="button number-adults-less" type="button">-</button>
+           <input id="search-number-adults" type="text" name="number-adults" value="" placeholder="2">
+           <button class="button number-adults-more" type="button">+</button>
+         </p>
+         <p class="search-item">
+           <label for="search-number-children">Дети:</label>
+           <button class="button number-children-less" type="button">-</button>
+           <input id="search-number-children" type="text" name="number-children" value="" placeholder="0">
+           <button class="button number-children-more" type="button">+</button>
+         </p>
+         <button class="button" type="submit">Найти</button>
+       </form>
+     </section>
+   </main>
+   <footer class="footer">
+     <p class="photo-link">
+       <a href="https://www.instagram.com/explore/tags/visitsedona/?hl=en">#visitsedona</a>
+     </p>
+     <div class="footer-social">
+       <ul class="social">
+         <li><a class="social-button" href="#">Twitter</a></li>
+         <li><a class="social-button" href="#">Facebook</a></li>
+         <li><a class="social-button" href="#">Youtube</a></li>
+       </ul>
+     </div>
+     <p class="courses-link">
+       <a class="website-logo" href="https://htmlacademy.ru/intensive/htmlcss">Website By
+         <img src="img/icons/icon_logo_html.svg" width="115" height="41" alt="Логотип html academy">
+       </a>
+     </p>
+   </footer>
+ </body>
 
-</html>
+ </html>
