@@ -39,29 +39,33 @@
        <form class="search-form" action="index.html" method="post">
          <p class="search-item">
            <label for="search-arrival-date">Дата заезда:</label>
-           <input id="search-arrival-date" type="text" name="arrival-date" value="" placeholder="24 апеля 2017">
+           <input id="search-arrival-date" type="text" name="arrival-date" value="" placeholder="24 апpеля 2017" aria-label="24 апpеля 2017">
            <button type="button" name="calendar">
              <img src="img/icons/icon_calendar.svg" width="21" height="23" alt="Calendar">
            </button>
          </p>
          <p class="search-item">
            <label for="search-date-departure">Дата выезда:</label>
-           <input id="search-date-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017">
+           <input id="search-date-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017" aria-label="4 июля 2017">
            <button type="button" name="calendar">
              <img src="img/icons/icon_calendar.svg" width="21" height="23" alt="Calendar">
            </button>
          </p>
-         <p class="search-item">
+         <p class="search-item-number">
            <label for="search-number-adults">Взрослые:</label>
-           <button class="button number-adults-less" type="button">-</button>
-           <input id="search-number-adults" type="text" name="number-adults" value="" placeholder="2">
-           <button class="button number-adults-more" type="button">+</button>
+           <span class="quantity-change">
+             <button class="button number-adults-less" type="button">-</button>
+             <input id="search-number-adults" type="text" name="number-adults" value="" placeholder="2" aria-label="2">
+             <button class="button number-adults-more" type="button">+</button>
+           </span>
          </p>
-         <p class="search-item">
+         <p class="search-item-number">
            <label for="search-number-children">Дети:</label>
-           <button class="button number-children-less" type="button">-</button>
-           <input id="search-number-children" type="text" name="number-children" value="" placeholder="0">
-           <button class="button number-children-more" type="button">+</button>
+           <span class="quantity-change">
+             <button class="button number-children-less" type="button">-</button>
+             <input id="search-number-children" type="text" name="number-children" value="" placeholder="0" aria-label="0">
+             <button class="button number-children-more" type="button">+</button>
+           </span>
          </p>
          <button class="button" type="submit">Найти</button>
        </form>
@@ -72,10 +76,11 @@
        <a href="https://www.instagram.com/explore/tags/visitsedona/?hl=en">#visitsedona</a>
      </p>
      <div class="footer-social">
+       <h3 class="visually-hidden">Мы в социальных сетях</h3>
        <ul class="social">
-         <li><a class="social-button" href="#">Twitter</a></li>
-         <li><a class="social-button" href="#">Facebook</a></li>
-         <li><a class="social-button" href="#">Youtube</a></li>
+         <li><a class="social-button" href="#">Мы в социальной сети Twitter</a></li>
+         <li><a class="social-button" href="#">Мы в социальной сети Facebook</a></li>
+         <li><a class="social-button" href="#">Мы на Youtube канале</a></li>
        </ul>
      </div>
      <p class="courses-link">
