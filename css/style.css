@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -9,10 +9,6 @@ body {
   text-transform: uppercase;
   color: #000000;
   background-color: #ebebeb;
-}
-
-.inner-page {
-  color: #000000;
 }
 
 a {
@@ -24,12 +20,11 @@ a {
 }
 
 .navigation-list a {
-  color: #000000;
+  color: inherit;
 }
 
 .navigation-list a:focus {
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .navigation-list a:hover {
@@ -41,9 +36,7 @@ a {
 }
 
 .welcome {
-  background-image: url("../img/intro/bg_intro.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("../img/intro/bg_intro.jpg") no-repeat center;
 }
 
 .about-intro-name {
@@ -81,21 +74,15 @@ a {
 
 .search-item input,
 .search-item-number input {
-  line-height: 16.8px;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.search-item input,
-.search-item-number input {
+  text-transform: inherit;
   background-color: #f1f1f1;
 }
 
-input:hover {
+.search-item input:hover {
   background-color: #ebebeb;
 }
 
-input:focus {
+.search-item input:focus {
   background-color: #ffffff;
 }
 
@@ -122,8 +109,7 @@ input:focus {
 
 button[type="submit"] {
   font-size: 21px;
-  line-height: 25.2px;
-  text-transform: uppercase;
+  text-transform: inherit;
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -158,12 +144,10 @@ button[type="submit"]:hover {
 
 .catalog-item-title {
   font-size: 21px;
-  line-height: 26px;
-  color: #000000;
 }
 
 .catalog-item-title a {
-  color: #000000;
+  color: inherit;
 }
 
 .catalog-item-title a:focus {
@@ -220,20 +204,17 @@ button[type="submit"]:hover {
   background-color: #f1f1f1;
 }
 
-.footer-main,
-.footer-inner {
-  background-color: #ffffff;
-  opacity: 0.9;
+.footer {
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .photo-link {
   font-size: 21px;
   text-align: left;
-  color: #000000;
 }
 
 .photo-link a {
-  color: #000000;
+  color: inherit;
 }
 
 .social {
@@ -259,13 +240,13 @@ button[type="submit"]:hover {
 }
 
 .courses-link a {
-  color: #000000;
+  color: inherit;
 }
 
-a svg:focus #logo-htmlacademy {
+.website-logo:focus svg {
   fill: #bdbbbb;
 }
 
-a svg:hover #logo-htmlacademy {
+.website-logo:hover svg {
   fill: #81b3d2;
 }
