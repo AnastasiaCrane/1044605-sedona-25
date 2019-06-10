@@ -250,3 +250,121 @@ button[type="submit"]:hover {
 .website-logo:hover svg {
   fill: #81b3d2;
 }
+
+/* ----------------------- Сеточные стили ------------------------- */
+.header {
+  margin-bottom: 61px;
+}
+
+.conteiner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.header-logo {
+  width: 138px;
+  height: 71px;
+}
+
+.welcome {
+  padding: 0;
+  margin: 0 auto;
+  min-height: 572px;
+}
+
+.welcome-to {
+  width: 458px;
+  height: 352px;
+  margin-bottom: 145px;
+  margin: 0 auto;
+}
+
+.about-intro {
+  width: 1200px;
+  min-height: 216px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.about-intro-name {
+  width: 637px;
+  min-height: 43px;
+  margin-bottom: 40px;
+  margin-left: 283px;
+}
+
+.feature-title {
+  width: 536px;
+  margin-left: 333px;
+}
+
+.search-title {
+  width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.search-place {
+  width: 568px;
+  margin: 0 auto;
+}
+
+.wrapper-search {
+  width: 568px;
+  margin: 0 auto;
+  margin-bottom: 55px;
+  background: #ffffff;
+}
+
+.footer .conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 78px;
+  padding: 36px 0;
+  display: flex;
+}
+
+.photo-link {
+  width: 154px;
+  margin: 0px;
+  margin-right: 248px;
+}
+
+.footer-social {
+  width: 162px;
+  margin: 0px;
+}
+
+.courses-link {
+  width: 202px;
+  margin: 0px;
+  margin-left: 224px;
+}
+
+.catalog {
+  width: 1200px;
+  margin: 0px auto;
+  background-color: #ffffff;
+
+}
+
+.catalog-item {
+  display: flex;
+  justify-content:
+  margin-bottom: 61px;
+  list-style: none;
+}
+
+.catalog-item-description {
+  margin-left: 30px;
+}
+
+.catalog-item-addition {
+  margin-left: 539px;
+}
