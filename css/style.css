@@ -109,19 +109,19 @@ a {
   color: #000000;
 }
 
-button[type="submit"] {
+.button-find {
   font-size: 21px;
   text-transform: inherit;
   color: #ffffff;
   background-color: #81b3d2;
 }
 
-button[type="submit"]:focus {
+.button-find:focus {
   color: #93b8d2;
   background-color: #5595bd;
 }
 
-button[type="submit"]:hover {
+.button-find:hover {
   background-color: #679dc0;
 }
 
@@ -161,6 +161,7 @@ button[type="submit"]:hover {
 }
 
 .catalog-item-info {
+  font-weight: 400;
   line-height: 21px;
   color: #333333;
 }
@@ -202,6 +203,7 @@ button[type="submit"]:hover {
 
 .catalog-item-rating {
   line-height: 21px;
+  font-weight: 400;
   color: #666666;
   background-color: #f1f1f1;
 }
@@ -255,7 +257,6 @@ button[type="submit"]:hover {
 }
 
 /* ----------------------- Сеточные стили ------------------------- */
-
 html {
   box-sizing: border-box;
 }
@@ -283,8 +284,8 @@ html {
 
 .navigation-list li {
   width: 240px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding: 0;
+  margin: 15px;
 }
 
 .navigation-list li:nth-child(3) {
@@ -295,10 +296,15 @@ html {
   text-align: right;
 }
 
+.navigation-list .active a {
+  color: #766357;
+}
+
 .header-logo {
+  position: absolute;
+  z-index: 1;
   width: 138px;
   height: 71px;
-  position: absolute;
   left: 50%;
   top: 0;
   margin-left: -69px;
@@ -318,19 +324,27 @@ html {
 }
 
 .welcome {
-  min-height: 572px;
+  min-height: 508px;
+  position: relative;
 }
 
 .welcome-to {
+  position: absolute;
+  bottom: 79px;
+  right: 370px;
   width: 458px;
   height: 352px;
-  margin-bottom: 145px;
-  margin: 0 auto;
 }
 
 .about-intro {
   padding-top: 66px;
   padding-bottom: 57px;
+}
+
+.about-intro svg {
+  position: absolute;
+  left: 356px;
+  top: 507px;
 }
 
 .about-intro-name {
@@ -359,6 +373,14 @@ html {
   margin: 0 auto;
 }
 
+.button-find {
+  width: 458px;
+  display: block;
+  padding: 18px 195px 22px 193px;
+  margin: 0 auto;
+  border: 0;
+}
+
 .footer {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 36px 0;
@@ -370,14 +392,17 @@ html {
 .photo-link {
   width: 400px;
   font-size: 21px;
-  margin-left: 124px;
+  text-align: center;
+}
+
+.footer-social {
+  width: 400px;
 }
 
 .footer-social ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 400px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
@@ -389,14 +414,24 @@ html {
   justify-content: center;
   width: 46px;
   height: 48px;
+}
+
+.footer-social li {
   margin-right: 6px;
+}
+
+.footer-social li:nth-child(3) {
+  margin-right: 0;
+}
+
+.courses-link {
+  width: 400px;
 }
 
 .website-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
   margin: 0;
 }
 
@@ -416,6 +451,7 @@ svg {
   align-items: center;
   padding: 30px 72px;
   border: 1px solid #e5e5e5;
+  margin: 0;
 }
 
 .catalog-item-image {
@@ -428,8 +464,12 @@ svg {
 }
 
 .catalog-item-title {
-  margin-bottom: 18px;
   margin: 0;
+}
+
+.catalog-item-info {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .catalog-item-addition {
@@ -438,6 +478,37 @@ svg {
   margin-left: auto;
 }
 
+.catalog-item-push {
+  display: flex;
+  margin: 0;
+}
+
+.catalog-item-push a {
+  margin-right: 6px;
+}
+
+.catalog-item-push a:nth-child(2) {
+  margin-right: 0;
+}
+
+.button-more {
+  width: 110px;
+  padding: 8px 8px 7px 18px;
+}
+
+.button-book {
+  width: 142px;
+  padding: 8px 4px 8px 17px;
+}
+
 .catalog-item-stars {
   margin-bottom: 47px;
+}
+
+.catalog-item-stars svg {
+  repeat: repeat-x;
+}
+
+.catalog-item-rating {
+  padding: 6px 10px 7px 13px;
 }
