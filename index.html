@@ -29,14 +29,14 @@
 
        <section class="welcome">
          <h1 class="visually-hidden">О нас</h1>
-         <div class="welcome-to">
-           <img src="img/intro/sedona_welcome.svg" width="458" height="352" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks! ">
-         </div>
-       </section>
-       <section class="about-intro">
          <svg width="1200px" height="57px" viewBox="0 0 1200 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff">
            <polygon id="Shape" points="0 57 0 0 250 24 250 0 600 57 950 0 950 24 1200 0 1200 57"></polygon>
          </svg>
+         <div class="welcome-to">
+           <img src="img/intro/sedona_welcome.svg" width="458" height="352" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!">
+         </div>
+       </section>
+       <section class="about-intro">
          <p class="about-intro-name">Седона-небольшой городок в аризоне, заслуживающий большего!</p>
          <p class="feature-title">рассмотрим 5 причин,по которым седона круче,чем гранд каньон!</p>
        </section>
@@ -48,44 +48,46 @@
          <section class="search">
            <button type="button" class="search-place">Поиск гостиницы в Седоне</button>
        </div>
-       <div class="wrapper-search" <form class="search-form" action="index.html" method="post">
-         <p class="search-item">
-           <label for="search-arrival-date">Дата заезда:</label>
-           <input id="search-arrival-date" type="text" name="arrival-date" value="" placeholder="24 апpеля 2017" aria-label="24 апpеля 2017">
-           <button type="button" name="calendar">
-             <img src="img/icons/icon_calendar.svg" width="21" height="23" alt="Calendar">
-           </button>
-         </p>
-         <p class="search-item">
-           <label for="search-date-departure">Дата выезда:</label>
-           <input id="search-date-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017" aria-label="4 июля 2017">
-           <button type="button" name="calendar">
-             <img src="img/icons/icon_calendar.svg" width="21" height="23" alt="Calendar">
-           </button>
-         </p>
-         <p class="search-item-number">
-           <label for="search-number-adults">Взрослые:</label>
-           <span class="quantity-change">
-             <button class="button number-adults-less" type="button">-</button>
-             <input id="search-number-adults" type="text" name="number-adults" value="" placeholder="2" aria-label="2">
-             <button class="button number-adults-more" type="button">+</button>
-           </span>
-         </p>
-         <p class="search-item-number">
-           <label for="search-number-children">Дети:</label>
-           <span class="quantity-change">
-             <button class="button number-children-less" type="button">-</button>
-             <input id="search-number-children" type="text" name="number-children" value="" placeholder="0" aria-label="0">
-             <button class="button number-children-more" type="button">+</button>
-           </span>
-         </p>
-         <button class="button-find" type="submit">Найти</button>
+       <div class="wrapper-search">
+         <form class="search-form" action="index.html" method="post">
+           <p class="search-item">
+             <label for="search-arrival-date">Дата заезда:</label>
+             <input id="search-arrival-date" type="text" name="arrival-date" value="" placeholder="24 апpеля 2017" aria-label="24 апpеля 2017">
+             <button type="button" name="calendar">
+               <img src="img/icons/icon_calendar.svg" width="21" height="23" alt="Calendar">
+             </button>
+           </p>
+           <p class="search-item">
+             <label for="search-date-departure">Дата выезда:</label>
+             <input id="search-date-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017" aria-label="4 июля 2017">
+             <button type="button" name="calendar">
+               <img src="img/icons/icon_calendar.svg" width="21" height="23" alt="Calendar">
+             </button>
+           </p>
+           <div class="number-people">
+             <p class="search-item-number">
+               <label for="search-number-adults">Взрослые:</label>
+               <span class="quantity-change">
+                 <button class="button number-adults-less" type="button">-</button>
+                 <input id="search-number-adults" type="text" name="number-adults" value="" placeholder="2" aria-label="2">
+                 <button class="button number-adults-more" type="button">+</button>
+               </span>
+             </p>
+             <p class="search-item-number">
+               <label for="search-number-children">Дети:</label>
+               <span class="quantity-change">
+                 <button class="button number-children-less" type="button">-</button>
+                 <input id="search-number-children" type="text" name="number-children" value="" placeholder="0" aria-label="0">
+                 <button class="button number-children-more" type="button">+</button>
+               </span>
+             </p>
+           </div>
+           <button class="button-find" type="submit">Найти</button>
          </form>
        </div>
        </section>
      </main>
      <footer class="footer">
-
 
        <p class="photo-link">
          <a href="https://www.instagram.com/explore/tags/visitsedona/?hl=en">#visitsedona</a>

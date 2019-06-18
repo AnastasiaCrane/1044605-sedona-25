@@ -36,7 +36,7 @@ a {
 }
 
 .welcome {
-  background: url("../img/intro/bg_intro.jpg") no-repeat center;
+  background: url("../img/intro/bg_intro2.jpg") no-repeat center;
 }
 
 .about-intro-name {
@@ -328,6 +328,13 @@ html {
   position: relative;
 }
 
+.welcome svg {
+  position: absolute;
+  margin: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .welcome-to {
   position: absolute;
   bottom: 79px;
@@ -339,12 +346,6 @@ html {
 .about-intro {
   padding-top: 66px;
   padding-bottom: 57px;
-}
-
-.about-intro svg {
-  position: absolute;
-  left: 356px;
-  top: 507px;
 }
 
 .about-intro-name {
@@ -363,7 +364,6 @@ html {
   text-transform: uppercase;
   font-weight: 700;
   padding: 35px 125px;
-  /* ???30px 10px */
   margin: 0 auto;
   border: 0;
 }
@@ -371,10 +371,24 @@ html {
 .wrapper-search {
   width: 568px;
   margin: 0 auto;
+  padding: 55px;
+}
+
+.search-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+}
+
+.number-people {
+  display: flex;
+  width: 0 auto;
 }
 
 .button-find {
-  width: 458px;
+  width: 100%;
   display: block;
   padding: 18px 195px 22px 193px;
   margin: 0 auto;
@@ -390,6 +404,7 @@ html {
 }
 
 .photo-link {
+  margin: 0;
   width: 400px;
   font-size: 21px;
   text-align: center;
@@ -426,6 +441,7 @@ html {
 
 .courses-link {
   width: 400px;
+  margin: 0;
 }
 
 .website-logo {
@@ -455,8 +471,15 @@ svg {
 }
 
 .catalog-item-image {
-  width: 135px;
   margin-right: 30px;
+  padding: 0;
+}
+
+.catalog-item-image img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
 }
 
 .catalog-item-description {
@@ -464,12 +487,12 @@ svg {
 }
 
 .catalog-item-title {
-  margin: 0;
+  margin: -3px;
 }
 
 .catalog-item-info {
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 14px;
+  margin-top: 7px;
 }
 
 .catalog-item-addition {
@@ -480,6 +503,7 @@ svg {
 
 .catalog-item-push {
   display: flex;
+  align-items: flex-start;
   margin: 0;
 }
 
@@ -493,22 +517,37 @@ svg {
 
 .button-more {
   width: 110px;
-  padding: 8px 8px 7px 18px;
+  padding: 3px;
+  text-align: center;
 }
 
 .button-book {
   width: 142px;
-  padding: 8px 4px 8px 17px;
+  padding: 3px;
+  text-align: center;
 }
 
 .catalog-item-stars {
   margin-bottom: 47px;
+  height: 17px;
+  background: url("../img/icons/icon_star.svg");
+  background-repeat: space;
+  margin: 0 0 47px auto;
 }
 
-.catalog-item-stars svg {
-  repeat: repeat-x;
+.stars-4 {
+  width: 89px;
+}
+
+.stars-3 {
+  width: 65px;
+}
+
+.stars-2 {
+  width: 41px;
 }
 
 .catalog-item-rating {
-  padding: 6px 10px 7px 13px;
+  padding: 3px;
+  text-align: center;
 }
