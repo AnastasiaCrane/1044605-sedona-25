@@ -363,15 +363,68 @@ html {
   display: block;
   text-transform: uppercase;
   font-weight: 700;
-  padding: 35px 125px;
+  padding: 35px;
   margin: 0 auto;
   border: 0;
 }
 
+.modal-map {
+  top: 50%;
+  left: 50%;
+  width: 1200px;
+  height: 594px;
+  margin: 0;
+}
+
 .wrapper-search {
+  position: absolute;
+  top: 1055px;
+  left: 50%;
+  margin-left: -284px;
   width: 568px;
-  margin: 0 auto;
+  height: 395px;
   padding: 55px;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-item input[type="text"] {
+  box-sizing: border-box;
+  width: 346px;
+  padding: 14px 214px 13px 12px;
+  padding-right: 40px;
+  border: none;
+}
+
+.search-item button {
+  position: absolute;
+  left: 50%;
+  margin: 0;
+  margin-left: 194px;
+  padding: 0;
+  margin-right: 9px;
+  background-color: #f1f1f1;
+  border: none;
+}
+
+.number-adults-less,
+.number-adults-more,
+.number-children-less,
+.number-children-more {
+  width: 38px;
+  background-color: #f1f1f1;
+  border: none;
+  border-right: 1px solid #ffffff;
+  padding: 10px;
+  margin: 0;
+}
+
+.quantity-change input[type="text"] {
+  width: 38px;
+  padding: 14px 15px;
+  margin: 0;
+  border: none;
+  border-right: 1px solid #ffffff;
 }
 
 .search-item {
@@ -379,7 +432,23 @@ html {
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  padding: 0;
+  margin-bottom: 29px;
   width: 100%;
+}
+
+.search-item-number {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-right: 54px;
+}
+
+.quantity-change {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  padding-left: 32px;
 }
 
 .number-people {
@@ -392,15 +461,21 @@ html {
   display: block;
   padding: 18px 195px 22px 193px;
   margin: 0 auto;
+  margin-top: 28px;
   border: 0;
 }
 
 .footer {
+  position: absolute;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 36px 0;
   display: flex;
   align-items: center;
   text-align: center;
+}
+
+.footer-main {
+  margin-top: -120px;
 }
 
 .photo-link {
@@ -487,7 +562,7 @@ svg {
 }
 
 .catalog-item-title {
-  margin: -3px;
+  margin-top: -3px;
 }
 
 .catalog-item-info {
