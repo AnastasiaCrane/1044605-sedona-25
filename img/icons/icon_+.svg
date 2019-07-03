@@ -1,0 +1,16 @@
+
+<svg width="11px" height="11px" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect x="256" y="204" width="11" height="11" id="rect-1"></rect>
+    </defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Index" transform="translate(-612.000000, -2373.000000)">
+            <g id="search-form" transform="translate(356.000000, 2169.000000)">
+                <g id="">
+                    <image x="256" y="204" width="11" height="11" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAABdGlDQ1BJQ0MgUHJvZmlsZQAAKJF9kM0rRGEUh58ZNGJ8FAvJ4pZhoSFGiR1jIWWhMcpgc+81H2rmzu3eOyFbZWOhLMTG18I/ILbKWikiJRv/AbGRrnMNjY9y6nSefu855z3ngD+kmma2vBtyhmPFRqLKVGJaCTwQwEc9HdSqum0OjY+PIfYVf9rLteSKXXZ6vf6+/2vVc0lbB1+lcJ9uWo7woHDrgmN6PCfcaMlQwosep4u85rFW5N2PnHhsWPhIWNEzqtT5roTDesbKgd/7K6R9y0l/41y2oH/O420STBqTExKbxVuwiTFCFAWNAvNkceiUaICTXHS8ouG8uWTNpzOOMiQXSCqjht4VViLdPQPg3fP3nUpaXmbvf4ay9ZKmbcLJKjTdlrTQDtStwPGZqVrqh1Qm7k+l4PEQahLQcAFVM3aqN1LcJBiFinvXfWqDwAa8rbvu657rvu1L8R2cGsXbfPbi4AbiyzB2Dlvb0C6962bfAXi7Zz0Sy6NmAAAAZElEQVQYGWNkQAMrV648AxQyBuKz4eHhJsjSTMgcKBukEARgNIQHJLEphkuiM0hSzIjkRnSD0PlnQSZjuA1dFZRvDFL8HockuvB7RnQRoLP+w8SAQYciT5IHKVYM8wOMhrmKAQDrUhFj62103gAAAABJRU5ErkJggg=="></image>
+                    <use fill-opacity="0" fill="#000000" fill-rule="evenodd" xlink:href="#rect-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
