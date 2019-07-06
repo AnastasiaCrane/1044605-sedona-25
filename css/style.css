@@ -22,10 +22,21 @@ html {
 }
 
 .wrapper {
-  width: 1200px;
+  width: 1280px;
   margin: 0 auto;
   background: #ffffff;
   display: block;
+  border-left: 40px solid #f1f1f1;
+  border-right: 40px solid #f1f1f1;
+}
+
+header,
+main,
+footer,
+footer-main {
+  box-shadow:
+    0 7px 15px rgba(0, 0, 0, 0.1),
+    0 7px 15px rgba(0, 0, 0, 0.1);
 }
 
 .header-logo {
@@ -49,7 +60,7 @@ html {
 .navigation-list li {
   width: 240px;
   padding: 0;
-  margin: 14px 15px;
+  margin: 15px 0;
 }
 
 .navigation-list li:nth-child(3) {
@@ -86,7 +97,7 @@ a {
 
 .welcome {
   background: url("../img/intro/bg_intro2.jpg") no-repeat center;
-  min-height: 506px;
+  min-height: 508px;
   position: relative;
 }
 
@@ -113,19 +124,19 @@ a {
 .welcome-to {
   position: absolute;
   bottom: 79px;
-  right: 370px;
+  right: 372px;
   width: 458px;
   height: 352px;
 }
 
 .about-intro {
-  padding-top: 66px;
-  padding-bottom: 57px;
+  padding-top: 62px;
+  padding-bottom: 0;
 }
 
 .about-intro-name {
-  width: 485px;
-  margin: 0 auto 40px;
+  width: 470px;
+  margin: 0 auto 28px;
   font-size: 21px;
 }
 
@@ -134,7 +145,7 @@ a {
   color: #333333;
   width: 540px;
   margin: 0 auto;
-  margin-bottom: 57px;
+  margin-bottom: 47px;
 }
 
 .advantage {
@@ -155,20 +166,23 @@ a {
 
 .advantage-title {
   line-height: 21px;
-  margin-top: 45px;
-  margin-bottom: 25px;
+  margin-top: 46px;
+  margin-bottom: 24px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advantage-number {
   font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 21px;
+  margin-top: -3px;
+  margin-bottom: 17px;
 }
 
 .advantage-description {
-  width: 400px;
-  margin: 0;
+  margin: 0 auto;
   font-weight: 400;
+  width: 305px;
 }
 
 .open-range {
@@ -188,17 +202,17 @@ a {
 
 .housing svg {
   margin-top: 60px;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .food svg {
   margin-top: 60px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .souvenirs svg {
   margin-top: 55px;
-  margin-bottom: 27px;
+  margin-bottom: 23px;
 }
 
 .services-title {
@@ -207,11 +221,12 @@ a {
 }
 
 .services-info {
-  padding-top: 25px;
-  padding-bottom: 67px;
+  padding-top: 21px;
+  padding-bottom: 75px;
   font-weight: 400;
   color: #333333;
-  margin: 0;
+  margin: 0 auto;
+  width: 280px;
 }
 
 .space {
@@ -222,7 +237,12 @@ a {
   display: flex;
   text-align: center;
   background-color: #eeeeee;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
 }
+
+.advantages-item-next {}
 
 .advantage-info-next {
   width: 400px;
@@ -231,35 +251,49 @@ a {
 
 .advantage-title-next {
   line-height: 21px;
-  margin-top: 45px;
+  margin-top: 47px;
   margin-bottom: 21px;
+  width: 155px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advantage-number-next {
   font-weight: 400;
   color: #333333;
-  margin-bottom: 21px;
+  width: 65px;
+  margin-left: 167px;
 }
 
 .advantage-description-next {
   color: #333333;
   font-weight: 400;
-  margin-bottom: 52px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  margin-bottom: 54px;
 }
 
 .lead {
   font-size: 30px;
   line-height: 36px;
+  margin: 0;
+  padding-top: 52px;
 }
 
 .search {
   position: relative;
+  margin-top: 46px;
 }
 
 .search-title-name {
   font-weight: 400;
   line-height: 24px;
   color: #333333;
+  width: 510px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 22px;
 }
 
 .search-place {
@@ -290,7 +324,7 @@ a {
   left: 50%;
   margin-left: -284px;
   width: 568px;
-  padding: 55px;
+  padding: 56px;
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
 }
@@ -325,12 +359,18 @@ a {
   align-items: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
   width: 100%;
 }
 
 .search-item label {
+  padding-left: 1px;
+}
+
+.departure label {
   padding-left: 0;
+  padding-top: 9px;
+  margin-bottom: 8px;
 }
 
 .search-item button {
@@ -339,7 +379,7 @@ a {
   width: 22px;
   height: 21px;
   left: 50%;
-  margin-left: 194px;
+  margin-left: 198px;
   border: none;
   background-color: transparent;
 }
@@ -347,7 +387,7 @@ a {
 .search-item input[type="text"] {
   box-sizing: border-box;
   width: 346px;
-  padding: 11px 194px 9px 12px;
+  padding: 8px 194px 9px 12px;
   padding-right: 40px;
   border: none;
 }
@@ -359,7 +399,8 @@ a {
 }
 
 .search-item-number label {
-  padding-left: 0;
+  padding-left: 1px;
+  margin-left: -3px;
 }
 
 .search-item input:hover {
@@ -394,11 +435,15 @@ a {
   display: flex;
   padding: 0;
   margin: 0;
-  padding-left: 40px;
+  padding-left: 41px;
+}
+
+.number-children label {
+  margin-left: 3px;
 }
 
 .number-child {
-  padding-left: 30px;
+  padding-left: 26px;
 }
 
 .quantity-change button {
@@ -406,7 +451,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
 }
 
 .quantity-change button:hover,
@@ -456,7 +500,7 @@ a {
   display: block;
   padding: 16px;
   margin: 0 auto;
-  margin-top: 54px;
+  margin-top: 53px;
   border: 0;
 }
 
@@ -478,12 +522,8 @@ a {
   text-align: center;
 }
 
-.footer {
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
 .footer-main {
-  margin-top: -120px;
+  margin-top: -121px;
 }
 
 .photo-link {
@@ -566,8 +606,8 @@ a {
   margin: 0;
 }
 
-svg {
-  margin-left: 4px;
+.website-logo svg {
+  margin-left: 8px;
 }
 
 .website-logo:focus svg {
@@ -584,7 +624,7 @@ svg {
   min-height: 215px;
   position: relative;
   display: flex;
-  padding: 24px 71px 25px 71px;
+  padding: 26px 71px 25px 71px;
   color: #ffffff;
 }
 
@@ -596,7 +636,7 @@ svg {
 
 .filter-title-house,
 .item-housing {
-  padding-left: 100px;
+  padding-left: 118px;
 }
 
 .ch {
@@ -612,24 +652,23 @@ label {
   margin: 0;
 }
 
-label:before {
-  font-size: 30px;
-  content: "";
-  display: inline-block;
-  width: 23px;
-  height: 23px;
+.filter-label svg {
   position: absolute;
   left: 0;
-  background-color: rgba(1, 1, 1, 0);
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+  top: 50%;
+  margin-top: -12.5px;
 }
 
-input[type=checkbox]:checked+label:before {
-  content: "\2713";
-  color: #ffffff;
-  text-align: center;
-  line-height: 20px;
+.filter-label .checkbox-on {
+  display: none;
+}
+
+.ch:checked+.filter-label .checkbox-on {
+  display: block;
+}
+
+.ch:checked+.filter-label .checkbox-off {
+  display: block;
 }
 
 .filter-item {
@@ -645,7 +684,6 @@ input[type=checkbox]:checked+label:before {
 
 .item-infrastructure label {
   margin: 0;
-
 }
 
 .item-infrastructure,
@@ -660,12 +698,12 @@ input[type=checkbox]:checked+label:before {
 
 /*___________________________________________________________________________*/
 .filter-range {
-  margin-left: 360px;
-  width: 317px;
+  margin-left: 347px;
+  width: 320px;
 }
 
 .filter-range-title {
-  margin-bottom: 9px;
+  margin-bottom: 13px;
   text-align: left;
   font-weight: 600;
   font-size: 16px;
@@ -738,10 +776,8 @@ input[type=checkbox]:checked+label:before {
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 20px;
   height: 20px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -763,8 +799,8 @@ input[type=checkbox]:checked+label:before {
 
 .btn-transparent {
   display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin: 0 86px;
+  padding: 6px 30px 6px 37px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -788,7 +824,7 @@ input[type=checkbox]:checked+label:before {
 }
 
 .found-number {
-  margin: 0 10px 0 0;
+  margin: 2px 10px 0 0;
   width: 154px;
   text-align: left;
 }
@@ -797,7 +833,7 @@ input[type=checkbox]:checked+label:before {
   display: flex;
   align-items: baseline;
   text-align: left;
-  margin: 0 auto 0 0;
+  margin: 6px auto 0 0;
   font-size: 12px;
   line-height: 18px;
 }
@@ -845,10 +881,12 @@ input[type=checkbox]:checked+label:before {
 .sorting-kind-list a:not([href])::after {
   display: none;
 }
-.sorting-kind-list a:hover{
+
+.sorting-kind-list a:hover {
   color: #81b3d2;
 }
-.sorting-kind-list a:focus{
+
+.sorting-kind-list a:focus {
   color: #000000;
 }
 
@@ -874,18 +912,23 @@ input[type=checkbox]:checked+label:before {
   border-right: 5px solid transparent;
   border-top: 10px solid #81b3d2;
 }
-.arrow-up a:hover{
+
+.arrow-up a:hover {
   border-bottom: 10px solid #000000;
 }
-.arrow-down a:hover{
+
+.arrow-down a:hover {
   border-top: 10px solid #000000;
 }
-.arrow-up a:focus{
+
+.arrow-up a:focus {
   border-bottom: 10px solid #81b3d2;
 }
-.arrow-down a:focus{
+
+.arrow-down a:focus {
   border-top: 10px solid #81b3d2;
 }
+
 .catalog {
   text-align: left;
 }
@@ -903,6 +946,18 @@ input[type=checkbox]:checked+label:before {
   padding: 30px 72px;
   border: 1px solid #e5e5e5;
   margin: 0;
+}
+
+.hotel-item {
+  margin: -2px 0 -5px 0;
+}
+
+.motel-item {
+  margin: 4px 0 -3px 0;
+}
+
+.apartments-item {
+  margin: -3px 0 -2px -1px;
 }
 
 .catalog-item-image {
@@ -948,10 +1003,22 @@ input[type=checkbox]:checked+label:before {
 
 .catalog-item-info {
   margin-bottom: 14px;
-  margin-top: 7px;
+  margin-top: 6px;
   font-weight: 400;
   line-height: 21px;
   color: #333333;
+}
+
+.catalog-item-priceh {
+  margin-left: 34px;
+}
+
+.catalog-item-pricem {
+  margin-left: 59px;
+}
+
+.catalog-item-pricea {
+  margin-left: 16px;
 }
 
 .catalog-item-push {
@@ -1011,7 +1078,7 @@ input[type=checkbox]:checked+label:before {
 .button-more {
   background-color: #81b3d2;
   width: 110px;
-  padding: 3px;
+  padding: 2px;
   text-align: center;
 }
 
