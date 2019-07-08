@@ -5,8 +5,8 @@
    <meta charset="utf-8">
    <title>HTML Academy: Седона</title>
    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-   <link href="css/normalize.css" rel="stylesheet">
-   <link href="css/style.css" rel="stylesheet">
+   <link href="css/normalize.min.css" rel="stylesheet">
+   <link href="css/style.min.css" rel="stylesheet">
  </head>
 
  <body>
@@ -14,7 +14,7 @@
      <header class="header">
        <nav class="navigation">
          <a class="header-logo" href="index.html">
-           <img src="img/intro/logo_sedona.png" width="138" height="71" alt="Логотип City of Sedona">
+           <img src="img/intro/logo_sedona.svg" width="138" height="71" alt="Логотип City of Sedona">
          </a>
          <ul class="navigation-list">
            <li><a href="#">Информация</a></li>
@@ -25,43 +25,44 @@
        </nav>
      </header>
      <main>
-       <section class="filters">
+       <form class="filters" action="inner.html" method="post">
+         <h1 class="visually-hidden">Поиск жилья в курортном городе Седона</h1>
          <div class="filter-item">
-           <h3 class="filter-title"> Инфраструктура: </h3>
+           <h3 class="filter-title">Инфраструктура:</h3>
            <div class="item-infrastructure">
-             <input type="checkbox" id="pool" name="pool" class="ch" checked>
+             <input type="checkbox" id="pool" name="pool" class="ch visually-hidden" checked>
              <label for="pool" class="filter-label">
                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23" fill="#FFFFFF" class="checkbox-on">
-                 <path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
-                 <path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
+                 <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                 <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
                </svg>
                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="#FFFFFF" class="checkbox-off">
-                 <path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
+                 <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
                </svg>
                Бассейн
              </label>
            </div>
            <div class="item-infrastructure">
-             <input type="checkbox" id="parking" name="parking" class="ch">
+             <input type="checkbox" id="parking" name="parking" class="ch visually-hidden">
              <label for="parking" class="filter-label">
                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23" fill="#FFFFFF" class="checkbox-on">
-                 <path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
-                 <path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
+                 <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                 <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
                </svg>
                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="#FFFFFF" class="checkbox-off">
-                 <path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
+                 <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
                </svg>
                Парковка</label>
            </div>
            <div class="item-infrastructure">
-             <input type="checkbox" id="wi-fi" name="wi-fi" class="ch">
+             <input type="checkbox" id="wi-fi" name="wi-fi" class="ch visually-hidden">
              <label for="wi-fi" class="filter-label">
                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23" fill="#FFFFFF" class="checkbox-on">
-                 <path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
-                 <path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
+                 <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                 <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
                </svg>
                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="#FFFFFF" class="checkbox-off">
-                 <path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
+                 <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
                </svg>
                Wi-fi</label>
            </div>
@@ -69,38 +70,38 @@
          <div class="filter-item-house">
            <h3 class="filter-title-house">Тип жилья: </h3>
            <div class="item-housing checkbox">
-             <input type="checkbox" id="hotel" name="hotel" class="ch" checked>
+             <input type="checkbox" id="hotel" name="hotel" class="ch visually-hidden" checked>
              <label for="hotel" class="filter-label">
                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23" fill="#FFFFFF" class="checkbox-on">
-                 <path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
-                 <path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
+                 <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                 <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
                </svg>
                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="#FFFFFF" class="checkbox-off">
-                 <path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
+                 <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
                </svg>
                Гостиница</label>
            </div>
            <div class="item-housing">
-             <input type="checkbox" id="motel" name="motel" class="ch" checked>
+             <input type="checkbox" id="motel" name="motel" class="ch visually-hidden" checked>
              <label for="motel" class="filter-label">
                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23" fill="#FFFFFF" class="checkbox-on">
-                 <path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
-                 <path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
+                 <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                 <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
                </svg>
                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="#FFFFFF" class="checkbox-off">
-                 <path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
+                 <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
                </svg>
                Мотель</label>
            </div>
            <div class="item-housing">
-             <input type="checkbox" id="apartments" name="apartments" class="ch" checked>
+             <input type="checkbox" id="apartments" name="apartments" class="ch visually-hidden" checked>
              <label for="apartments" class="filter-label">
                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23" fill="#FFFFFF" class="checkbox-on">
-                 <path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
-                 <path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
+                 <path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                 <path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
                </svg>
                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="#FFFFFF" class="checkbox-off">
-                 <path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
+                 <path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z" />
                </svg>
                Апартаменты</label>
            </div>
@@ -108,53 +109,51 @@
          <div class="filter-range">
            <div class="filter-range-title">Стоимость в сутки (р):</div>
            <div class="price-controls">
-             <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+             <label class="min-pric">от<input type="text" name="min-price" value="0"></label>
 
-             <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+             <label class="max-pric">до<input type="text" name="max-price" value="3000"></label>
            </div>
            <div class="range-controls">
              <div class="scale">
                <div class="bar"></div>
              </div>
-             <div class="range-toggle range-toggle-min">
-             </div>
+             <div class="range-toggle range-toggle-min"></div>
              <div class="range-toggle range-toggle-max"></div>
            </div>
            <button class="btn-transparent" type="submit">Показать</button>
          </div>
-       </section>
+       </form>
 
        <section class="found-housing">
-         <h2 class="found-number">Найдено: 3</h2>
-         <div class="sorting-kind">
-           <h4 class="sorting">Сортировка:</h4>
-           <ul class="sorting-kind-list">
-             <li>
-               <a>По цене</a>
-             </li>
-             <li>
-               <a href="#">По типу</a>
-             </li>
-             <li>
-               <a href="#">По рейтингу</a>
-             </li>
-           </ul>
-         </div>
-         <div>
-           <ul class="arrow">
-             <li class="arrow-up">
-               <a href="#" class="visually-hidden">Сортировка по возрастания</a>
-             </li>
-             <li class="arrow-down">
-               <a class="visually-hidden">Сортировка по убыванию</a>
-             </li>
-           </ul>
-         </div>
+         <span class="found-number">Найдено: 3</span>
+
+         <h2 class="sorting">Сортировка:</h2>
+         <ul class="sorting-kind-list">
+           <li>
+             <a>По цене</a>
+           </li>
+           <li>
+             <a href="#">По типу</a>
+           </li>
+           <li>
+             <a href="#">По рейтингу</a>
+           </li>
+         </ul>
+         <ul class="arrow">
+           <li class="arrow-up">
+             <span class="visually-hidden">Сортировка по возрастания</span>
+             <a href="#"></a>
+           </li>
+           <li class="arrow-down">
+             <span class="visually-hidden">Сортировка по убыванию</span>
+             <a></a>
+           </li>
+         </ul>
        </section>
        <section class="catalog">
          <h2 class="visually-hidden">Выбор жилья на время пребывания в Седоне</h2>
          <ul class="catalog-list">
-           <li class="catalog-item hotel-item">
+           <li class="catalog-item">
              <a class="catalog-item-image" href="#">
                <img src="img/catalog/amara.jpg" width="135" height="90" alt="Amara Resort & Spa">
              </a>
@@ -178,7 +177,7 @@
                <a class="catalog-item-rating" href="#">Рейтинг: 8,5</a>
              </div>
            </li>
-           <li class="catalog-item motel-item">
+           <li class="catalog-item">
              <a class="catalog-item-image" href="#">
                <img src="img/catalog/desert.jpg" width="135" height="90" alt="Desert Quail Inn">
              </a>
@@ -202,7 +201,7 @@
                <a class="catalog-item-rating" href="#">Рейтинг: 8,9</a>
              </div>
            </li>
-           <li class="catalog-item  apartments-item">
+           <li class="catalog-item">
              <a class="catalog-item-image" href="#">
                <img src="img/catalog/villas.jpg" width="135" height="90" alt="Villas At Poco Diablo">
              </a>
@@ -230,16 +229,14 @@
        </section>
      </main>
      <footer class="footer">
-       <p class="photo-link">
-         <a href="https://www.instagram.com/explore/tags/visitsedona/?hl=en">#visitsedona</a>
-       </p>
+       <a class="photo-link" href="https://www.instagram.com/explore/tags/visitsedona/?hl=en">#visitsedona</a>
        <div class="footer-social">
          <h3 class="visually-hidden">Мы в социальных сетях</h3>
          <ul class="social">
            <li><a class="social-button" href="#">
                <span class="visually-hidden">Мы в социальной сети Twitter</span>
-               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
-                 <path fill="#FFF"
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15" fill="#FFF">
+                 <path
                    d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z" />
                </svg>
              </a>
@@ -247,15 +244,15 @@
            <li>
              <a class="social-button" href="#">
                <span class="visually-hidden">Мы в социальной сети Facebook</span>
-               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
-                 <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
+               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22" fill="#FFF">
+                 <path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" />
                </svg>
              </a>
            </li>
            <li><a class="social-button" href="#">
                <span class="visually-hidden">Мы на Youtube канале</span>
-               <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="16px" viewBox="0 0 20 16">
-                 <path fill="#FFF" d="M17,0 L3,0 C1.35,0 0,1.35 0,3 L0,13 C0,14.65 1.35,16 3,16 L17,16 C18.65,16 20,14.65 20,13 L20,3 C20,1.35 18.65,0 17,0 Z M6.027,11.998 L6.027,4.002 L15.014,8 L6.027,11.998 L6.027,11.998 Z" />
+               <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="16px" viewBox="0 0 20 16" fill="#FFF">
+                 <path d="M17,0 L3,0 C1.35,0 0,1.35 0,3 L0,13 C0,14.65 1.35,16 3,16 L17,16 C18.65,16 20,14.65 20,13 L20,3 C20,1.35 18.65,0 17,0 Z M6.027,11.998 L6.027,4.002 L15.014,8 L6.027,11.998 L6.027,11.998 Z" />
                </svg>
              </a>
            </li>
