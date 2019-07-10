@@ -104,8 +104,6 @@
 
            </li>
          </ul>
-
-
        </section>
 
        <div class="search-title">
@@ -117,7 +115,7 @@
              <form class="search-form" action="index.html" method="post">
                <p class="search-item">
                  <label for="search-arrival-date">Дата заезда:</label>
-                 <input id="search-arrival-date" type="text" name="arrival-date" value="" placeholder="24 апpеля 2017" aria-label="24 апpеля 2017">
+                 <input id="search-arrival-date" type="text" name="arrival" value="" placeholder="24 апpеля 2017" aria-label="24 апpеля 2017">
                  <button class="button-calendar" type="button" name="calendar">
                    <span class="visually-hidden">Выбор даты заезда в гостиницу</span>
                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="#c8c8c8">
@@ -130,7 +128,7 @@
                </p>
                <p class="search-item departure">
                  <label for="search-date-departure">Дата выезда:</label>
-                 <input id="search-date-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017" aria-label="4 июля 2017">
+                 <input id="search-date-departure" type="text" name="departure" value="" placeholder="4 июля 2017" aria-label="4 июля 2017">
                  <button class="button-calendar" type="button" name="calendar">
                    <span class="visually-hidden">Выбор даты выезда с гостиницы</span>
                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="#c8c8c8">
@@ -149,7 +147,7 @@
                        <span class="visually-hidden">Уменьшение количества взрослых при бронировании гостиницы</span>
 
                      </button>
-                     <input id="search-number-adults" type="text" name="number-adults" value="" placeholder="2" aria-label="2">
+                     <input id="search-number-adults" type="text" name="adults" value="" placeholder="2" aria-label="2">
                      <button class="button number-adults-more" type="button">
                        <span class="visually-hidden">Увеличение количества взрослых при бронировании гостиницы</span>
 
@@ -163,7 +161,7 @@
                        <span class="visually-hidden">Уменьшение количества детей при бронировании гостиницы</span>
 
                      </button>
-                     <input id="search-number-children" type="text" name="number-children" value="" placeholder="0" aria-label="0">
+                     <input id="search-number-children" type="text" name="children" value="" placeholder="0" aria-label="0">
                      <button class="button number-children-more" type="button">
                        <span class="visually-hidden">Увеличение количества детей при бронировании гостиницы</span>
 
@@ -176,6 +174,7 @@
            </div>
          </section>
        </div>
+
        <section class="modal-map">
          <img src="img/bottom/map.jpg" width="1200" height="594" alt="Map">
          <iframe
@@ -228,22 +227,48 @@
        </p>
      </footer>
    </div>
-   <script type="text/javascript">
+   <script>
      var link = document.querySelector(".search-place");
+
      var popup = document.querySelector(".wrapper-search");
      var close = popup.querySelector(".search-place");
 
+     var form = popup.querySelector(".search-form");
+     var arrival = popup.querySelector("[name=arrival]");
+     var departure = popup.querySelector("[name=departure]");
+     var adults = popup.querySelector("[name=adults]");
+     var children = popup.querySelector("[name=children]");
+
      link.addEventListener("click", function(evt) {
        evt.preventDefault();
-       popup.classList.add("wrapper-search");
+       popup.classList.toggle("modal-show");
+       arrival.focus();
      });
-
 
      close.addEventListener("click", function(evt) {
        evt.preventDefault();
-       popup.classList.toggle("wrapper-search");
+       popup.classList.add("modal-show");
+
+     });
+
+     form.addEventListener("submit", function(evt) {
+       if (!arrival.value || !departure.value || !adults.value || !children.value) {
+         evt.preventDefault();
+
+       }
+     });
+
+     window.addEventListener("keydown", function(evt) {
+       if (evt.keyCode === "Escape") {
+         evt.preventDefault();
+         if (popup.classList.contains("modal-show")) {
+           popup.classList.remove("modal-show");
+
+         }
+       }
      });
    </script>
+   <script src="js/popup.js"></script>
  </body>
 
  </html>

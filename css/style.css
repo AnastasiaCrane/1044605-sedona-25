@@ -306,6 +306,24 @@ a {
   background-color: #513e33;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+
+  70% {
+    transform: translateY(20px);
+  }
+
+  90% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .wrapper-search {
   position: absolute;
   z-index: 100;
@@ -316,6 +334,12 @@ a {
   padding: 56px;
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.5s;
 }
 
 .modal-map {
